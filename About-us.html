@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <script src="js/darkmode switch.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/non-botstrap.css">
+
+
+</head>
+<body class="background">
+<article class="container-fluid">
+    <!-- Header Row -->
+    <div class="row">
+        <header class="header-bg col-12 p-3 rounded-bottom-3 mb-4">
+            <div class="row align-items-center">
+                <!-- Dropdown nav menu with icon -->
+                <div class="col-2">
+                    <div class="dropdown">
+                        <button class="btn btn-menu dropdown-toggle rounded-2 px-3 py-2" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bars menu-icon text-white"></i>
+                        </button>
+                        <!--the items in the dropdown menue-->
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="Impresum.html">Impressum</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="About-us.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Logo centered in header -->
+                <div class="col-8 text-center">
+                    <a href="index.html">
+                        <img class="logo-height img-fluid" src="img/Logo 600 by 200.png" alt="Märchenvilla Sonnenschein Logo">
+                    </a>
+
+                </div>
+
+                <!-- Dark mode switch -->
+                <div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 form-check form-switch dmswitch align-items-center">
+                    <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
+                    <label class="form-check-label" for="darkModeSwitch"></label>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--inhalt -->
+
+    <!-- Footer -->
+    <div class="row">
+        <footer class="footer-gradient col-12 text-center text-white p-4 mt-5">
+            <p class="mb-2 fw-semibold">sample Text</p>
+            <p class="mb-0">
+                <a href="Impresum.html" class=" text-white text-decoration-none me-3">Impressum</a>
+                <span class="text-white-50">|</span>
+                <a href="Impresum.html" class="text-white text-decoration-none mx-3">Datenschutz</a>
+                <span class="text-white-50">|</span>
+                <a href="Impresum.html" class="text-white text-decoration-none me-3">Kontakt</a>
+            </p>
+        </footer>
+    </div>
+</article>
+</body>
+</html>

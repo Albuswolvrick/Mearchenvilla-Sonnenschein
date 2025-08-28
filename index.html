@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <script src="js/darkmode switch.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/non-botstrap.css">
+
+
+</head>
+<body class="background">
+<div class="container-fluid">
+    <!-- Header Row -->
+    <div class="row">
+        <header class="header-bg col-12 p-3 rounded-bottom-3 mb-4">
+            <div class="row align-items-center">
+                <!-- Dropdown nav menu with icon -->
+                <div class="col-2">
+                    <div class="dropdown">
+                        <button class="btn btn-menu dropdown-toggle rounded-2 px-3 py-2" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bars menu-icon text-white"></i>
+                        </button>
+                        <!--the items in the dropdown menue-->
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="Impresum.html">Impressum</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="About-us.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Logo centered in header -->
+                <div class="col-8 text-center">
+                    <a href="index.html">
+                        <img class="logo-height img-fluid" src="img/Logo 600 by 200.png" alt="Märchenvilla Sonnenschein Logo">
+                    </a>
+
+                </div>
+
+                <!-- Dark mode switch -->
+                <div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 form-check form-switch dmswitch align-items-center">
+                    <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
+                    <label class="form-check-label" for="darkModeSwitch"></label>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Mobile Layout: img-text-img-map-img -->
+
+    <!-- First Image (Sabine) - Mobile First -->
+    <div class="row mb-4 d-block d-md-none">
+        <div class="col-12 text-center">
+            <img class="img-fluid rounded-3 border border-3" style="border-color: #8B4513 ; max-width: 100%;" src="img/Francis test bild.jpg" alt="image of Sabine Hesse"><img>
+        </div>
+    </div>
+
+    <!-- Text Section - Mobile -->
+    <div class="row mb-4 d-block d-md-none">
+        <div class="col-12">
+            <div class="p-4  border border-3 rounded-3" style="border-color: #cc00ff ;">
+                <p class="fs-6  mb-0">
+                    sample text
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Image (House) - Mobile -->
+    <div class="row mb-4 d-block d-md-none">
+        <div class="col-12 text-center">
+            <img class="img-fluid rounded-3 border border-3" style="border-color: #cc00ff ; max-width: 100%;" src="img/Francis test bild.jpg" alt="image of House">
+        </div>
+    </div>
+
+    <!-- Map Section - Mobile -->
+    <div class="row mb-4 d-block d-md-none">
+        <div class="col-12">
+            <div class="bg-secondary-subtle border border-2 border-secondary rounded-3 d-flex align-items-center justify-content-center text-secondary fs-5" style="height: 250px;">
+                <i class="fas fa-map-marker-alt fs-2 me-3"></i>
+                <a href="https://www.google.com/maps/place/Heideweg+17,+48529+Nordhorn,+Germany" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <div class="map-container">
+                        <div class="map-overlay">Click to open in Google Maps</div>
+                        <iframe
+                                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Heideweg+17,+48529+Nordhorn,+Germany"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Image (Manuela) - Mobile -->
+    <div class="row mb-4 d-block d-md-none">
+        <div class="col-12 text-center">
+            <img class="img-fluid rounded-3 border border-3" style="border-color: #cc00ff ; max-width: 100%;" src="img/Francis test bild.jpg" alt="image of Manuela">
+        </div>
+    </div>
+
+    <!-- Desktop Layout - Hidden on Mobile -->
+
+    <!-- Image and Text Row - Desktop -->
+    <div class="row mb-4 d-none d-md-flex align-items-center">
+        <div class="col-md-4">
+            <img class="img-fluid rounded-3 border border-3 shadow-sm" style="border-color: #cc00ff ;" src="img/Francis test bild.jpg" alt="image of Sabine Hesse">
+        </div>
+        <div class="col-md-8">
+            <div class="p-4  border border-3 rounded-3" style="border-color: #cc00ff ;">
+                <p class="fs-5 lh-lg mb-0">
+                    Willkommen in der Märchenvilla Sonnenschein! Hier erwartet Sie eine zauberhafte Atmosphäre,
+                    in der Träume wahr werden. Unsere liebevoll gestalteten Räume bieten den perfekten Rahmen
+                    für unvergessliche Momente. Lassen Sie sich von der warmen Gastfreundschaft und dem
+                    besonderen Charme unseres Hauses verzaubern. Wir freuen uns darauf, Sie bei uns
+                    begrüßen zu dürfen!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Centered House Image - Desktop -->
+    <div class="row mb-4 d-none d-md-block">
+        <div class="col-12 text-center">
+            <img class="img-fluid rounded-3 border border-3 shadow-sm" style="border-color: #8B4513 ; max-width: 600px;" src="img/Francis test bild.jpg" alt="image of House">
+        </div>
+    </div>
+
+    <!-- Map and Third Image Row - Desktop -->
+    <div class="row mb-4 d-none d-md-flex">
+        <div class="col-md-8">
+            <div class="bg-secondary-subtle border border-2 border-secondary rounded-3 d-flex align-items-center justify-content-center text-secondary fs-4 h-100" style="min-height: 300px;">
+                <i class="fas fa-map-marker-alt fs-2 me-3"></i>
+                <a href="https://www.google.com/maps/place/Heideweg+17,+48529+Nordhorn,+Germany" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <div class="map-container">
+                        <div class="map-overlay">Click to open in Google Maps</div>
+                        <iframe
+                                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Heideweg+17,+48529+Nordhorn,+Germany"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid rounded-3 border border-3 shadow-sm" style="border-color: #8B4513 ;" src="img/Francis test bild.jpg" alt="image of Manuela">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row">
+        <footer class="footer-gradient col-12 text-center text-white p-4 mt-5">
+            <p class="mb-2 fw-semibold">sample Text</p>
+            <p class="mb-0">
+                <a href="Impresum.html" class="  text-white text-decoration-none me-3">Impressum</a>
+                <span class="text-white-50">|</span>
+                <a href="Impresum.html" class="text-white text-decoration-none mx-3">Datenschutz</a>
+                <span class="text-white-50">|</span>
+                <a href="Impresum.html" class="text-white text-decoration-none me-3">Kontakt</a>
+            </p>
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>

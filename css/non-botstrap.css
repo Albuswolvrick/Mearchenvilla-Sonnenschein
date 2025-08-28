@@ -1,0 +1,28 @@
+/* Only essential custom styles that can't be achieved with Bootstrap */
+.header-bg {
+    background-color: #8CB789 !important;
+}
+
+.footer-gradient {
+    background: linear-gradient(45deg, #0066cc, #ff0066) !important;
+}
+
+.btn-menu {
+    background: none ;
+    border: 2px solid white ;
+
+}
+
+.btn-menu:hover {
+    background-color: rgba(255, 255, 255, 0.1) ;
+    color: white ;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+}
+
+.logo-height {
+    max-height: 80px;
+    object-fit: contain;
+}
