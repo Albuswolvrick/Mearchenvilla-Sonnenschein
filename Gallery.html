@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de" >
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <script src="js/darkmode switch.js"></script>
+    <link rel="stylesheet" href="css/non-botstrap.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+
+</head>
+<body class="background">
+<article class="container-fluid">
+    <!-- Header Row -->
+    <div class="row">
+        <header class="header-bg col-12 p-3 rounded-bottom-3 mb-4">
+            <div class="row align-items-center">
+                <!-- Dropdown nav menu with icon -->
+                <div class="col-2">
+                    <div class="dropdown">
+                        <button class="btn btn-menu dropdown-toggle rounded-2 px-3 py-2" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bars menu-icon text-white"></i>
+                        </button>
+                        <!--the items in the dropdown menue-->
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="Impresum.html">Impressum</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="About-us.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Logo centered in header -->
+                <div class="col-8 text-center">
+                    <a href="index.html">
+                        <img class="logo-height img-fluid" src="img/Logo 600 by 200.png" alt="Märchenvilla Sonnenschein Logo">
+                    </a>
+
+                </div>
+
+                <!-- Dark mode switch -->
+                <div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 form-check form-switch dmswitch align-items-center">
+                    <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>
+                    <label class="form-check-label" for="darkModeSwitch"></label>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--inhalt -->
+    <div class="container-fluid gallery-container">
+        <h1 class="text-center mb-4">Image Gallery</h1>
+        <div class="row" id="gallery-row">
+            <!-- Images will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalImageTitle">Image Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body position-relative">
+                    <img id="modalImage" class="popup-image" src="" alt="">
+                    <button class="nav-btn prev" id="prevBtn">❮</button>
+                    <button class="nav-btn next" id="nextBtn">❯</button>
+                    <div class="image-counter" id="imageCounter">1 / 6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--the bootstrap js is doing the Modal.-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--in heare you have to change the Imiges-->
+    <script src="js/Galery.js"></script>
+
+
+</article>
+</body>
+</html>
