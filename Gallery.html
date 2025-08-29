@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="de" data-bs-theme="dark">
+<html lang="de" >
 <head>
     <meta charset="UTF-8">
-    <title>homepage</title>
+    <title>Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <script src="js/darkmode switch.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/non-botstrap.css">
+    <link rel="stylesheet" href="css/gallery.css">
 
 
 </head>
@@ -52,97 +52,37 @@
         </header>
     </div>
     <!--inhalt -->
-    <!--Galery-->
-    <div class="row">
-        <div class="col-12">
-            <div class="container gallery-container">
-                <h1 class="text-center text-white mb-5">Galerie</h1>
+    <div class="container-fluid gallery-container">
+        <h1 class="text-center mb-4">Image Gallery</h1>
+        <div class="row" id="gallery-row">
+            <!-- Images will be dynamically inserted here -->
+        </div>
+    </div>
 
-                <div class="row" id="galleryGrid">
-                    <!-- Images -->
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="gallery-item" onclick="openModal(0)">
-                            <img src="img/Francis test bild.jpg" alt="#" class="gallery-image">
-                            <div class="gallery-title">#</div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="gallery-item" onclick="openModal(1)">
-                            <img src="img/Logo 600 by 200.png" alt="#" class="gallery-image">
-                            <div class="gallery-title">#</div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="gallery-item" onclick="openModal(2)">
-                            <img src="https://picsum.photos/400/300?random=3" alt="#" class="gallery-image">
-                            <div class="gallery-title">#</div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="gallery-item" onclick="openModal(3)">
-                            <img src="https://picsum.photos/400/300?random=4" alt="#" class="gallery-image">
-                            <div class="gallery-title">#</div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="gallery-item" onclick="openModal(4)">
-                            <img src="https://picsum.photos/400/300?random=5" alt="#" class="gallery-image">
-                            <div class="gallery-title">#</div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="gallery-item" onclick="openModal(5)">
-                            <img src="https://picsum.photos/400/300?random=6" alt="#" class="gallery-image">
-                            <div class="gallery-title">#</div>
-                        </div>
-                    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalImageTitle">Image Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body position-relative">
+                    <img id="modalImage" class="popup-image" src="" alt="">
+                    <button class="nav-btn prev" id="prevBtn">❮</button>
+                    <button class="nav-btn next" id="nextBtn">❯</button>
+                    <div class="image-counter" id="imageCounter">1 / 6</div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <div class="row">
-        <footer class="footer-gradient col-12 text-center text-white p-4 mt-5">
-            <p class="mb-2 fw-semibold">sample Text</p>
-            <p class="mb-0">
-                <a href="Impresum.html" class=" text-white text-decoration-none me-3">Impressum</a>
-                <span class="text-white-50">|</span>
-                <a href="Impresum.html" class="text-white text-decoration-none mx-3">Datenschutz</a>
-                <span class="text-white-50">|</span>
-                <a href="Impresum.html" class="text-white text-decoration-none me-3">Kontakt</a>
-            </p>
-        </footer>
-    </div>
+    <!--the bootstrap js is doing the Modal.-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--in heare you have to change the Imiges-->
+    <script src="js/Galery.js"></script>
+
+
 </article>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

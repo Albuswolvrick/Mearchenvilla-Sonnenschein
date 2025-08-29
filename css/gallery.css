@@ -1,0 +1,160 @@
+@charset "UTF-8";
+:root,
+    /* Mobile-first CSS */
+.gallery-container {
+    padding: 20px 10px;
+}
+
+.gallery-item {
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    color: white;
+    padding: 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .image-overlay {
+    transform: translateY(0);
+}
+
+/* Modal Styles */
+.modal-dialog {
+    max-width: 90vw;
+    margin: 20px auto;
+}
+
+.modal-content {
+    background: #000;
+    border: none;
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #333;
+    background: rgba(255,255,255,0.1);
+}
+
+.modal-title {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+.modal-body {
+    padding: 0;
+    text-align: center;
+}
+
+.popup-image {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.8);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 1060;
+}
+
+.nav-btn:hover {
+    background: rgba(255,255,255,1);
+}
+
+.nav-btn.prev {
+    left: 20px;
+}
+
+.nav-btn.next {
+    right: 20px;
+}
+
+.image-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Tablet and Desktop */
+@media (min-width: 768px) {
+    .gallery-container {
+        padding: 30px 20px;
+    }
+
+    .gallery-item {
+        margin-bottom: 20px;
+    }
+
+    .gallery-item img {
+        height: 250px;
+    }
+
+    .modal-dialog {
+        max-width: 80vw;
+        margin: 50px auto;
+    }
+
+    .nav-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 992px) {
+    .gallery-item img {
+        height: 300px;
+    }
+
+    .modal-dialog {
+        max-width: 70vw;
+    }
+}
