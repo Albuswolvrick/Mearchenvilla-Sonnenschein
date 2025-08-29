@@ -42,7 +42,8 @@ let currentImageIndex = 0;
 const modal = new bootstrap.Modal(document.getElementById('imageModal'));
 
 // Generate gallery using for loop
-function createGallery() {
+function createGallery() 
+{
     const galleryRow = document.getElementById('gallery-row');
 
     for (let i = 0; i < images.length; i++) {
