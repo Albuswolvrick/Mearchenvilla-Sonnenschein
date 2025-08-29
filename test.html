@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/non-botstrap.css">
     <script src="js/darkmode switch.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -53,35 +52,7 @@
         </header>
     </div>
     <!--inhalt -->
-    <div class="row">
-        <div class="container-fluid gallery-container">
-            <h1 class="text-center mb-4">Image Gallery</h1>
-            <div class="row" id="gallery-row">
-                <!-- Images will be dynamically inserted here -->
-            </div>
-        </div>
-    </div>
-    
-    <!-- most likly the problem-->
-    <!-- Modal -->
-    <div class="row">
-        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalImageTitle">Image Title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body position-relative">
-                        <img id="modalImage" class="popup-image" src="" alt="">
-                        <button class="nav-btn prev" id="prevBtn">❮</button>
-                        <button class="nav-btn next" id="nextBtn">❯</button>
-                        <div class="image-counter" id="imageCounter">1 / 6</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- Footer -->
     <div class="row">
         <footer class="footer-gradient col-12 text-center text-white p-4 mt-5">
@@ -96,6 +67,5 @@
         </footer>
     </div>
 </article>
-<script src="js/Galery.js"></script>
 </body>
 </html>
