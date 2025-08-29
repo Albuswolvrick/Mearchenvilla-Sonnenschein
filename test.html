@@ -2,13 +2,16 @@
 <html lang="de" >
 <head>
     <meta charset="UTF-8">
-    <title>homepage</title>
+    <title>Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <script src="js/darkmode switch.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/non-botstrap.css">
     <link rel="stylesheet" href="css/gallery.css">
+    
+    
+
 
 
 </head>
@@ -52,26 +55,30 @@
         </header>
     </div>
     <!--inhalt -->
-    <div class="container-fluid gallery-container">
-        <h1 class="text-center mb-4">Image Gallery</h1>
-        <div class="row" id="gallery-row">
-            <!-- Images will be dynamically inserted here -->
+    <div class="row">
+        <div class="container-fluid gallery-container">
+            <h1 class="text-center mb-4">Image Gallery</h1>
+            <div class="row" id="gallery-row">
+                <!-- Images will be dynamically inserted here -->
+            </div>
         </div>
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalImageTitle">Image Title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body position-relative">
-                    <img id="modalImage" class="popup-image" src="" alt="">
-                    <button class="nav-btn prev" id="prevBtn">❮</button>
-                    <button class="nav-btn next" id="nextBtn">❯</button>
-                    <div class="image-counter" id="imageCounter">1 / 6</div>
+    <div class="row">
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalImageTitle">Image Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body position-relative">
+                        <img id="modalImage" class="popup-image" src="" alt="">
+                        <button class="nav-btn prev" id="prevBtn">❮</button>
+                        <button class="nav-btn next" id="nextBtn">❯</button>
+                        <div class="image-counter" id="imageCounter">1 / 6</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,13 +96,12 @@
             </p>
         </footer>
     </div>
-    
     <!--the bootstrap js is doing the Modal.-->
-    <script src="js/bootstrap.min.js"></script>
+
     <!--in heare you have to change the Imiges-->
     <script src="js/Galery.js"></script>
 
-   
+
 </article>
 </body>
 </html>
