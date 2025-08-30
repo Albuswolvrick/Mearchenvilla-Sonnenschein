@@ -1,1 +1,1 @@
-when dfinding a bug please inform the nearest person with the capebilety to fix that bug better if it is yourself get a debuging duck and start the funn also please do not use any of this with out permision and do not downgrade it with a push or change stuf in the main branch
+when you find a bug please inform the nearest person with the capebilety to fix that bug better if it is yourself get a debuging duck and start the funn also please do not use any of this with out permision and do not downgrade it with a push or change stuf in the main branch
